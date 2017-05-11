@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.requirements << 'none'
 
   s.add_dependency 'solidus', '> 1.0'
-  s.add_dependency 'deface', '~> 1.0.2'
+  s.add_dependency 'deface', '~> 1'
   s.add_dependency 'solidus_auth_devise', '~> 1.5'
   s.add_dependency 'acts-as-taggable-on', '4.0.0'
   s.add_dependency 'coderay'
