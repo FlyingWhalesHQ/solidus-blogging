@@ -4,7 +4,7 @@ the installer will append this file to the app vendored assets here: 'vendor/ass
 */
 
 #blog_entry_author_id_field .select2-container {
-    width: 100%;
+  width: 100%;
 }
 
 .blog_entry_image_thumbnail img {

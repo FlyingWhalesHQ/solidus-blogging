@@ -1,3 +1,5 @@
+require "redcarpet"
+
 class CodeRayify < Redcarpet::Render::HTML
   def block_code(code, language)
     language ||= :plaintext

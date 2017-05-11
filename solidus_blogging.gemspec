@@ -1,27 +1,26 @@
-# encoding: UTF-8
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'solidus_blogging'
-  s.version     = '1.0.0'
+  s.version     = '1.1.0'
   s.summary     = 'BloggingSolidus: A Solidus blogging solution'
-  s.description = 'A basic blogging solution for use with the Solidus E-Commerce platform.'
+  s.description = 'Blogging solution for use with the Solidus E-Commerce platform.'
   s.required_ruby_version = '>= 1.9.3'
 
   s.author    = 'Dan Mitchell'
   s.email     = 'dan@digitalreflow.co.uk'
   s.homepage  = 'http://www.digitalreflow.co.uk'
 
-  #s.files       = `git ls-files`.split("\n")
-  #s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")
+  s.files        = `git ls-files`.split("\n")
+  s.test_files   = `git ls-files -- spec/*`.split("\n")
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'solidus', '> 1.0'
-  s.add_dependency 'deface', '~> 1'
-  s.add_dependency 'solidus_auth_devise', '~> 1.5'
-  s.add_dependency 'acts-as-taggable-on', '4.0.0'
-  s.add_dependency 'coderay'
-  s.add_dependency 'redcarpet'
+  s.add_runtime_dependency 'solidus', '> 1.0'
+  s.add_runtime_dependency 'solidus_auth_devise'
+  s.add_runtime_dependency 'acts-as-taggable-on', '~> 4.0.0'
+  s.add_runtime_dependency 'deface', '~> 1'
+  s.add_runtime_dependency 'coderay'
+  s.add_runtime_dependency 'redcarpet'
 
   s.add_development_dependency 'capybara', '~> 2.7'
   s.add_development_dependency 'coffee-rails', '~> 4.0.0'
