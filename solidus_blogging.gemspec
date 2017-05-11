@@ -20,6 +20,8 @@ Gem::Specification.new do |s|
   s.add_dependency 'deface', '~> 1.0.2'
   s.add_dependency 'solidus_auth_devise', '~> 1.5'
   s.add_dependency 'acts-as-taggable-on', '4.0.0'
+  s.add_dependency 'coderay'
+  s.add_dependency 'redcarpet'
 
   s.add_development_dependency 'capybara', '~> 2.7'
   s.add_development_dependency 'coffee-rails', '~> 4.0.0'
@@ -32,5 +34,4 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'simplecov', '~> 0.7.1'
   s.add_development_dependency 'sqlite3'
   s.add_development_dependency 'launchy'
-
 end

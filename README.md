@@ -31,7 +31,7 @@ Installation
 Add to your Gemfile:
 
 ```ruby
-gem 'solidus_blogging', github: 'digitalreflow/solidus-blogging'
+gem 'solidus_blogging', github: 'AndreiMotinga/solidus-blogging'
 ```
 
 Bundle your dependencies and run the installation generator:
