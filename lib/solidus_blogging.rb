@@ -1,3 +1,4 @@
+require 'rails'
 require 'solidus'
 require 'deface'
 require 'solidus_auth_devise'

@@ -1,13 +1,7 @@
 module SolidusBlogging
   class Engine < Rails::Engine
-    require 'spree/core'
-    isolate_namespace Spree
-    engine_name 'spree_blogging_spree'
-
-    # use rspec for tests
-    config.generators do |g|
-      g.test_framework :rspec
-    end
+    engine_name 'solidus_blogging'
+    config.autoload_paths += %W(#{config.root}/lib)
 
     def self.activate
       Dir.glob(File.join(File.dirname(__FILE__), '../../app/**/*_decorator*.rb')) do |c|
