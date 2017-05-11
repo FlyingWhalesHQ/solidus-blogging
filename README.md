@@ -31,15 +31,14 @@ Installation
 Add to your Gemfile:
 
 ```ruby
-gem 'solidus_blogging', github: 'AndreiMotinga/solidus-blogging'
+gem "solidus_blogging", github: "AndreiMotinga/solidus-blogging"
 ```
 
 Bundle your dependencies and run the installation generator:
 
 ```shell
     bundle install
-    rake railties:install:migrations
-    rake db:migrate
+    bin/rails g solidus_blogging:install
 ```
 
 Testing
