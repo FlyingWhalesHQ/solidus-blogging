@@ -24,6 +24,9 @@ ru:
         google_plus_url: Ссылка на профиль в Google Plus
         bio_info: Биография
   spree:
+    editing: Редактирование
+    back_to_blog_list: Назад
+    view_in_store: Просмотреть
     title: Заголовок
     body: Содержимое
     summary: Summary
@@ -54,6 +57,7 @@ ru:
     admin:
       tab:
         blog_entries: Блог
+        blog: Блог
     blog:
       ago: назад
       categories: Категории
