@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
 
   s.add_runtime_dependency 'solidus', '> 1.0'
   s.add_runtime_dependency 'solidus_auth_devise'
-  s.add_runtime_dependency 'acts-as-taggable-on', '~> 4.0.0'
+  s.add_runtime_dependency 'acts-as-taggable-on'
   s.add_runtime_dependency 'deface', '~> 1'
 
   s.add_development_dependency 'awesome_print'

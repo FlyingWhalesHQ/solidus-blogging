@@ -1,7 +1,7 @@
-xml.instruct! :xml, :version => "1.0" 
+xml.instruct! :xml, :version => "1.0"
 xml.rss :version => "2.0" do
   xml.channel do
-    xml.title "#{Spree::Config[:site_name]} Blog"
+    xml.title "#{current_store.name} Blog"
     xml.description ""
     xml.link blog_url
 
