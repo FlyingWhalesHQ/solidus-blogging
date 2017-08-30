@@ -18,7 +18,7 @@
     <h1><%= @blog_entry.title %></h1>
 
     <div class="blog_entry_body">
-      <%= markdown @blog_entry.body %>
+      <%= @blog_entry.body %>
     </div>
 
     <%= render :partial => 'spree/blog_entries/blog_entry_details', :locals => {:blog_entry => @blog_entry} %>

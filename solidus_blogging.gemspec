@@ -22,8 +22,6 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'solidus_auth_devise'
   s.add_runtime_dependency 'acts-as-taggable-on', '~> 4.0.0'
   s.add_runtime_dependency 'deface', '~> 1'
-  s.add_runtime_dependency 'coderay'
-  s.add_runtime_dependency 'redcarpet'
 
   s.add_development_dependency 'awesome_print'
   s.add_development_dependency 'capybara', '~> 2.7'
