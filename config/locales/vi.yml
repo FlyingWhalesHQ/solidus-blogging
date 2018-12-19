@@ -1,0 +1,69 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+vi:
+  activerecord:
+    models:
+      spree/blog_entry:
+        one: Bài viết
+        other: Bài viết
+    attributes:
+      spree/blog_entry:
+        title: Tiêu đề
+        body: Nội dung
+        summary: Tóm tắt
+        permalink: Permalink
+        published_at: Đăng lúc
+        visible: Hiển thị
+        author_id: Tác giả
+        tag_list: Từ khoá
+        category_list: Chủ đề
+      spree/user:
+        nickname: Nickname
+        website_url: Website URL
+        google_plus_url: Google Plus URL
+        bio_info: Biographical info
+  spree:
+    editing: Đang chỉnh sửa
+    back_to_blog_list: Quay về danh mục bài viết
+    view_in_store: Xem
+    title: Tiêu đề
+    body: Nội dung
+    summary: Tóm tắt
+    permalink: Permalink
+    published_at: Ngày đăng
+    visible: Hiển thị
+    author_id: Tác giả
+    tag_list: Từ khoá
+    category_list: Chủ đề
+    nickname: Nickname
+    website_url: Website URL
+    google_plus_url: Google Plus URL
+    bio_info: Biographical info
+    blog: Blog
+    blog_entries: Bài viết
+    new_blog_entry: Viết bài mới
+    no_blog_entries: Chưa có bài viết nào.
+    blog_entry_featured_image: Ảnh đại diện
+    posted_on: Đăng ngày
+    posted_in: trong chuyên mục
+    tagged: Từ khoá
+    by: bởi
+    blog_read_more: đọc tiếp
+    blog_archive: Lưu trữ
+    blog_tag: Từ khoá
+    blog_category: Chủ đề
+    blog_author: Tác giả
+    admin:
+      tab:
+        blog_entries: Bài viết
+        blog: Blog
+    blog:
+      ago: ago
+      categories: Chủ đề
+      tags: Từ khoá
+      recent_entries: Bài viết gần đây
+      archive: Lưu trữ
+  time:
+    formats:
+      blog_date: "%e.%m.%Y"
