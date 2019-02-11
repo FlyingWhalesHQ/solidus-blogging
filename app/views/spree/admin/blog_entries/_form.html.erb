@@ -50,11 +50,19 @@
         <% end %>
       </div>
 
-      <div class="col-4">
+      <div class="col-2">
         <%= form.field_container :visible do %>
           <%= form.label :visible, Spree.t(:visible) %><br />
           <%= form.check_box :visible %>
           <%= form.error_message_on :visible %>
+        <% end %>
+      </div>
+
+      <div class="col-2">
+        <%= form.field_container :is_pinned do %>
+          <%= form.label :is_pinned, Spree.t(:is_pinned) %><br />
+          <%= form.check_box :is_pinned %>
+          <%= form.error_message_on :is_pinned %>
         <% end %>
       </div>
     </div>
