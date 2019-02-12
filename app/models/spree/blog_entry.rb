@@ -6,9 +6,11 @@ class Spree::BlogEntry < ActiveRecord::Base
   before_save :set_published_at
   validates_presence_of :title
   validates_presence_of :body
+  validate :maximum_pinned_post
 
   default_scope { order("published_at DESC") }
   scope :visible, -> { where :visible => true }
+  scope :pinned, -> { where :is_pinned => true }
   scope :recent, lambda{|max=5| visible.limit(max) }
 
   if Spree.user_class
@@ -80,6 +82,12 @@ class Spree::BlogEntry < ActiveRecord::Base
 
   def set_published_at
     self.published_at = Time.now if published_at.blank?
+  end
+
+  def maximum_pinned_post
+    if (self.class.pinned.count == 3 && self.is_pinned)
+      errors.add(:is_pinned, :can_not_pinned)
+    end
   end
 
   def validate
