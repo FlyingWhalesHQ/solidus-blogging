@@ -21,6 +21,7 @@
         <th class="title"><%= Spree.t(:title) %></th>
         <th class=""><%= Spree.t(:summary) %></th>
         <th class=""><%= Spree.t(:visible) %></th>
+        <th class=""><%= Spree.t(:is_pinned) %></th>
         <th class="actions"></th>
       </tr>
     </thead>
@@ -33,6 +34,9 @@
           <td class="align-center"><%= blog_entry.summary.truncate(300) if blog_entry.summary %></td>
           <td class="align-center">
             <%= content_tag(:i, '', :class => 'fa fa-ok green') if blog_entry.visible %>
+          </td>
+          <td class="align-center">
+            <%= content_tag(:i, '', :class => 'fa fa-ok green') if blog_entry.is_pinned %>
           </td>
           <td class="actions">
             <%= link_to_blog_in_store blog_entry, :no_text => true, target: :blank %>
