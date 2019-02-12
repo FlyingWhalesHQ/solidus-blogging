@@ -15,6 +15,7 @@ vi:
         permalink: Permalink
         published_at: Đăng lúc
         visible: Hiển thị
+        is_pinned: Ghim lên đầu
         author_id: Tác giả
         tag_list: Từ khoá
         category_list: Chủ đề
@@ -33,6 +34,7 @@ vi:
     permalink: Permalink
     published_at: Ngày đăng
     visible: Hiển thị
+    is_pinned: Ghim lên đầu
     author_id: Tác giả
     tag_list: Từ khoá
     category_list: Chủ đề
